@@ -5,7 +5,7 @@ app = Flask('')
 
 @app.route('/')
 def main():
-    return open("logs.txt", "r").read()
+    return open("../logs.txt", "r").read()
 
 def run():
     app.run(host="0.0.0.0", port=8080)
